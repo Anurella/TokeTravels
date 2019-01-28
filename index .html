@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A Coming soon page">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Anurella Ndukwu Amaka, Alex Devero inspired">
+    <title> Toke Travels </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
+    <style>body,html{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.wrapper,body,html{height:100%}body{font:1rem/1.516 Montserrat,'Montserrat Alternates',Arial,sans-serif}.wrapper{position:relative;background:url(toketravels.jpg) no-repeat center center/cover}.wrapper:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.75)}.content,footer,header{position:absolute}header{width:100%;text-align:center;top:0}footer{width:100%;bottom:0;color:#fff;text-align:center;padding-bottom:8px}.logo{max-width:145px}.content{top:50%;left:50%;text-align:center;color:#fff;transform:translate(-50%,-50%);font-family:'Montserrat Alternates',sans-serif}.content h1{margin-top:0;font-family:Montserrat}.countdown{margin:auto;display:table;font-weight:500;font-size:1.1rem}.countdown>div{display:table-cell;min-width:75px}.countdown span{position:relative;display:block;font-size:.7rem;text-align:center}.countdown span:before{content:'';position:absolute;top:-2px;right:0;left:0;margin-right:auto;margin-left:auto;width:20px;height:1px;background:#fff}</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="toke.png" alt="Toke Travels Logo" class="logo">
+        </header>
+        <main class="content">
+            <h1> COMING SOON </h1>
+            <div class="countdown">
+                <div class="countdown__days">
+                    <div class="number"></div>
+                    <span>Days</span>
+                </div>
+                <div class="countdown__hours">
+                    <div class="number"></div>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown__minutes">
+                    <div class="number"></div>
+                    <span>Minutes</span>
+                </div>
+                <div class="countdown__seconds">
+                    <div class="number"></div>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <p>Our website is under construction.
+                <br/> We`ll be here soon with our new awesome site.</p>
+        </main>
+        <footer>
+            © TokeTravels 2019
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>!function(){var e=new Date("September 30, 2019 23:59:59").getTime(),n=document.querySelector(".countdown__days .number"),o=document.querySelector(".countdown__hours .number"),t=document.querySelector(".countdown__minutes .number"),r=document.querySelector(".countdown__seconds .number");setInterval(function(){var u=(new Date).getTime(),c=e-u,m=Math.floor(c/864e5),a=Math.floor(c%864e5/36e5),d=Math.floor(c%36e5/6e4),i=Math.floor(c%6e4/1e3);n.innerHTML=m,o.innerHTML=a,t.innerHTML=d,r.innerHTML=i},1e3)}()</script>
+</body>
+
+</html>
