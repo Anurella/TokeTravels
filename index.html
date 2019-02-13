@@ -18,20 +18,20 @@
             padding: 0;
             box-sizing: border-box;
             position: relative;
-            height: 100%;
-          
+            height:100%;
         }
 
         a{
             text-decoration: none;
+            color:#fff;
 
         }
 
         main {
             width: 100%;
             position: relative;
+            height: calc(100vh - 30px);
             background-color:#000;
-            height:calc(100vh - 30px);
         }
 
        main div {
@@ -63,19 +63,23 @@
 
         footer {
 
-            position:fixed;
-            bottom: 0;
-            height: 30px;
-            width:100%;
-            left:0;
-            background-color:#65015c46;
+position: fixed;
+bottom: 0;
+height: 30px;
+width: 100%;
+left: 0;
+background-color: #65015c;
 
         }
 
         footer p {
+            margin:5px 0;
             position: relative;
             text-align: center;
+            color:#fff;
         }
+
+
 
         /* Animate the background shapes */
 #background path {
@@ -240,9 +244,9 @@
     var blobs = document.querySelectorAll('path');
 
     // apply random color to each path
-     blobs.forEach(blob => { blob.style.fill = colors[Math.floor(Math.random() * colors.length)]
-     });
-
+    blobs.forEach(blob => {
+        blob.style.fill = colors[Math.floor(Math.random() * colors.length)]
+    });
 </script>
 
 </html>
